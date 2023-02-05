@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <!-- um "form" tem as mesmas caracteristicas de um container no estilo <section> <footer> -->
+    <form action="" method="POST">
+        <fieldset>
+            <legend>
+                <h2> Meu Primeiro formulário </h2>
+            </legend>
+            <label>
+                Nome: <input type="text" placeholder="Nome Completo">
+                <p>
+                    <!-- A função "AUTOCOMPLETE" usa como referencia a informação mais utilizada como referencia para agilizar o preenchimento da página pelo usuário -->
+                    E-mail: <input type="email" placeholder="seu.email@google.com" autocomplete="email">
+            </label>
+            <p>
+                <!-- "&#225 = à" -->
+                Faixa Et&#225ria: <input type="text" list="idade-id" placeholder="Qual sua Idade?" />
+                <datalist id="idade-id">
+                    <option> 18 - 25 </option>
+                    <option> 26 - 30 </option>
+                    <option> 31 - 40 </option>
+                    <option> 41 - 50 </option>
+                    <option> 51 - 60+ </option>
+                </datalist>
+            <p>
+
+                <!-- Comentário <input type="text" placeholder="Me fale o que achou de sua experiência em minha página"> <p> -->
+
+                <textarea rows="10" cols="50"
+                    placeholder="Me fale o que achou de sua experiência em minha página"></textarea>
+            <p>
+
+                <button type="reset"> Limpar </button>
+                <button autofocus type="submit"> Enviar </button>
+                <!-- A função "AUTOFOCUS" executa uma ação no botão quando o ENTER for pressionado no teclado 
+            A função "DISABLED" inabilita o envio do furmulário, deve ser usada em conjunto com o JAVASCRIP para que ela permaneça habilitada somente durante o preenchimento do formulário 
+    -->
+        </fieldset>
+    </form>
+</body>
+
+</html>
